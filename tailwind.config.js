@@ -15,12 +15,16 @@ module.exports = {
         sans: ['"Satoshi"', ...defaultTheme.fontFamily.sans],
         display: ['"ClashDisplay"'],
       },
+      spacing: {
+        '18': '72px'
+      },
       colors: {
         brand: {
           dark: "#181818",
           grey: {
             E6: "#E6E6E6",
             "7D": "#7D7D7D",
+            "B5": "#B5B5B5",
             D9: "#D9D9D9",
           },
         },
