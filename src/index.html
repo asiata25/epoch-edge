@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -9,12 +9,12 @@
     <link rel="stylesheet" href="./style/output.css" />
   </head>
   <body>
-    <header class="bg-brand-grey-E6 pt-10">
+    <header class="relative bg-brand-grey-E6 py-10 overflow-hidden">
       <div class="container">
         <nav
-          class="rounded-full bg-brand-dark/20 p-4 flex justify-between items-center"
+          class="flex items-center justify-between rounded-full border border-white bg-brand-dark/20 p-4"
         >
-          <button type="button" class="p-6 rounded-full bg-brand-dark">
+          <button type="button" class="rounded-full bg-brand-dark p-6">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               class="size-6"
@@ -42,13 +42,96 @@
             </svg>
           </button>
           <span class="font-display text-2xl font-medium">Epoch Edge.</span>
-          <button type="button" class="p-6 rounded-full bg-brand-dark">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-              <path d="M21.97 18.33C21.97 18.69 21.89 19.06 21.72 19.42C21.55 19.78 21.33 20.12 21.04 20.44C20.55 20.98 20.01 21.37 19.4 21.62C18.8 21.87 18.15 22 17.45 22C16.43 22 15.34 21.76 14.19 21.27C13.04 20.78 11.89 20.12 10.75 19.29C9.6 18.45 8.51 17.52 7.47 16.49C6.44 15.45 5.51 14.36 4.68 13.22C3.86 12.08 3.2 10.94 2.72 9.81C2.24 8.67 2 7.58 2 6.54C2 5.86 2.12 5.21 2.36 4.61C2.6 4 2.98 3.44 3.51 2.94C4.15 2.31 4.85 2 5.59 2C5.87 2 6.15 2.06 6.4 2.18C6.66 2.3 6.89 2.48 7.07 2.74L9.39 6.01C9.57 6.26 9.7 6.49 9.79 6.71C9.88 6.92 9.93 7.13 9.93 7.32C9.93 7.56 9.86 7.8 9.72 8.03C9.59 8.26 9.4 8.5 9.16 8.74L8.4 9.53C8.29 9.64 8.24 9.77 8.24 9.93C8.24 10.01 8.25 10.08 8.27 10.16C8.3 10.24 8.33 10.3 8.35 10.36C8.53 10.69 8.84 11.12 9.28 11.64C9.73 12.16 10.21 12.69 10.73 13.22C11.27 13.75 11.79 14.24 12.32 14.69C12.84 15.13 13.27 15.43 13.61 15.61C13.66 15.63 13.72 15.66 13.79 15.69C13.87 15.72 13.95 15.73 14.04 15.73C14.21 15.73 14.34 15.67 14.45 15.56L15.21 14.81C15.46 14.56 15.7 14.37 15.93 14.25C16.16 14.11 16.39 14.04 16.64 14.04C16.83 14.04 17.03 14.08 17.25 14.17C17.47 14.26 17.7 14.39 17.95 14.56L21.26 16.91C21.52 17.09 21.7 17.3 21.81 17.55C21.91 17.8 21.97 18.05 21.97 18.33Z" stroke="white" stroke-width="1.5" stroke-miterlimit="10"/>
-              </svg>
+          <button type="button" class="rounded-full bg-brand-dark p-6">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <path
+                d="M21.97 18.33C21.97 18.69 21.89 19.06 21.72 19.42C21.55 19.78 21.33 20.12 21.04 20.44C20.55 20.98 20.01 21.37 19.4 21.62C18.8 21.87 18.15 22 17.45 22C16.43 22 15.34 21.76 14.19 21.27C13.04 20.78 11.89 20.12 10.75 19.29C9.6 18.45 8.51 17.52 7.47 16.49C6.44 15.45 5.51 14.36 4.68 13.22C3.86 12.08 3.2 10.94 2.72 9.81C2.24 8.67 2 7.58 2 6.54C2 5.86 2.12 5.21 2.36 4.61C2.6 4 2.98 3.44 3.51 2.94C4.15 2.31 4.85 2 5.59 2C5.87 2 6.15 2.06 6.4 2.18C6.66 2.3 6.89 2.48 7.07 2.74L9.39 6.01C9.57 6.26 9.7 6.49 9.79 6.71C9.88 6.92 9.93 7.13 9.93 7.32C9.93 7.56 9.86 7.8 9.72 8.03C9.59 8.26 9.4 8.5 9.16 8.74L8.4 9.53C8.29 9.64 8.24 9.77 8.24 9.93C8.24 10.01 8.25 10.08 8.27 10.16C8.3 10.24 8.33 10.3 8.35 10.36C8.53 10.69 8.84 11.12 9.28 11.64C9.73 12.16 10.21 12.69 10.73 13.22C11.27 13.75 11.79 14.24 12.32 14.69C12.84 15.13 13.27 15.43 13.61 15.61C13.66 15.63 13.72 15.66 13.79 15.69C13.87 15.72 13.95 15.73 14.04 15.73C14.21 15.73 14.34 15.67 14.45 15.56L15.21 14.81C15.46 14.56 15.7 14.37 15.93 14.25C16.16 14.11 16.39 14.04 16.64 14.04C16.83 14.04 17.03 14.08 17.25 14.17C17.47 14.26 17.7 14.39 17.95 14.56L21.26 16.91C21.52 17.09 21.7 17.3 21.81 17.55C21.91 17.8 21.97 18.05 21.97 18.33Z"
+                stroke="white"
+                stroke-width="1.5"
+                stroke-miterlimit="10"
+              />
+            </svg>
           </button>
         </nav>
+        <div class="relative z-10 w-full">
+          <h1 class="mt-20 text-center font-display text-[200px] font-medium">
+            Epoch Edge.
+          </h1>
+          <img
+            src="./assets/images/sofa.png"
+            alt="sofa"
+            class="drop-shadow-header-product mx-auto -mt-16 size-[800px]"
+          />
+          <div
+            class="absolute top-[180px] max-w-[351px] rounded-b-[60px] rounded-tl-[32px] border border-white/60 p-5 pb-7 backdrop-blur-lg"
+            style="clip-path: polygon(82% 0, 100% 38%, 100% 100%, 0 100%, 0 0)"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="mb-[53px] size-16"
+              viewBox="0 0 64 64"
+              fill="none"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M24.501 10.5841L32.0001 31.9229L39.4992 10.5841C41.316 5.41434 37.4798 4.79053e-07 32.0001 0C26.5203 -4.79053e-07 22.6841 5.41433 24.501 10.5841L24.501 10.5841ZM24.501 53.4159L32.0001 32.0771L39.4992 53.4159C41.316 58.5857 37.4798 64 32.0001 64C26.5203 64 22.6841 58.5857 24.501 53.4159ZM32.0771 32.0001L53.4159 24.501C58.5857 22.6841 64 26.5203 64 32.0001C64 37.4798 58.5857 41.316 53.4159 39.4992L32.0771 32.0001ZM10.5841 24.501L31.9229 32.0001L10.5841 39.4992C5.41434 41.316 2.39526e-07 37.4798 0 32.0001C-2.39526e-07 26.5203 5.41433 22.6841 10.5841 24.501L10.5841 24.501ZM32.0545 32.0545L52.446 41.8407C57.3862 44.2116 58.5022 50.7527 54.6274 54.6274C51.237 58.0178 45.8052 57.5873 42.9118 54.117C42.4985 53.6213 42.137 53.0635 41.8406 52.446L32.0545 32.0545ZM22.1593 11.554L31.9455 31.9455L11.554 22.1593C6.61373 19.7884 5.49781 13.2473 9.37257 9.37256C13.2473 5.49781 19.7884 6.61373 22.1593 11.554L22.1593 11.554ZM31.9455 32.0545L22.1593 52.4459C19.7884 57.3862 13.2473 58.5021 9.37258 54.6274C5.98217 51.237 6.41275 45.8051 9.88296 42.9118C10.3787 42.4985 10.9365 42.137 11.554 41.8406L31.9455 32.0545ZM52.446 22.1593L32.0545 31.9454L41.8406 11.554C42.137 10.9365 42.4985 10.3787 42.9119 9.88293C45.8052 6.41272 51.237 5.98214 54.6274 9.37255C55.1118 9.85689 55.5181 10.3829 55.8488 10.9372C58.1634 14.8174 56.7687 20.0848 52.446 22.1593Z"
+                fill="#181818"
+              />
+            </svg>
+            <p class="text-sm text-brand-grey-7D">
+              Our meticulously crafted furniture pieces are designed to enhance
+              your living space, whether you're looking for timeless classics or
+              contemporary designs.
+            </p>
+          </div>
+          <div class="mt-[103px] flex w-full items-center justify-between">
+            <a href="#" class="flex items-center gap-x-2 text-xl font-medium"
+              >[ <span class="text-base text-brand-grey-7D">Features</span> ]</a
+            >
+            <a href="#" class="flex items-center gap-x-2 text-xl font-medium"
+              >[
+              <span class="text-base text-brand-grey-7D">Galleries</span> ]</a
+            >
+            <button
+              type="button"
+              class="inline-flex size-40 items-center justify-center rounded-full bg-brand-dark"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M5 16C5.742 16 6.85 16.733 7.78 17.475C8.98 18.429 10.027 19.569 10.826 20.876C11.425 21.856 12 23.044 12 24M12 24C12 23.044 12.575 21.855 13.174 20.876C13.974 19.569 15.021 18.429 16.219 17.475C17.15 16.733 18.26 16 19 16M12 24V0"
+                  stroke="white"
+                  stroke-width="2"
+                />
+              </svg>
+            </button>
+            <a href="#" class="flex items-center gap-x-2 text-xl font-medium"
+              >[ <span class="text-base text-brand-grey-7D">Product</span> ]</a
+            >
+            <a href="#" class="flex items-center gap-x-2 text-xl font-medium"
+              >[
+              <span class="text-base text-brand-grey-7D">Specifications</span>
+              ]</a
+            >
+          </div>
+        </div>
       </div>
+      <span
+        class="absolute -start-80 -bottom-28 font-display text-[952px] font-medium text-brand-dark/[8%]"
+        >Juli.</span
+      >
     </header>
   </body>
 </html>
